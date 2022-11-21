@@ -37,10 +37,10 @@ def get_time(time_string):
     return time.mktime(data)
 
 
-class NorenApiPy(NorenApi):
+class ZebueApi(NorenApi):
     def __init__(self):
         #NorenApi.__init__(self, host='http://rama.kambala.co.in/NorenWClient/', websocket='ws://rama.kambala.co.in:5551/NorenWS/', eodhost='http://kurma.kambala.co.in/chartApi/getdata/')
-        NorenApi.__init__(self, host='https://www.kambala.co.in//NorenWClientTP/', websocket='ws://matsya.kambala.co.in:9657/NorenWS/', eodhost='http://kurma.kambala.co.in/chartApi/getdata/')
+        NorenApi.__init__(self, host='https://mynt.in/NorenClientTP/', websocket='ws://mynt.in:5553/NorenWS/', eodhost='https://mynt.in/chartApi/getdata/')
         global api
         api = self
     def place_basket(self, orders):
